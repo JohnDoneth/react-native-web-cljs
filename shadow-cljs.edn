@@ -1,0 +1,21 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src"]
+
+ :dev-http {8080 "public"}
+
+ :dependencies
+ [[reagent "1.0.0"]]
+
+ :builds
+ {:frontend {:target :browser
+             :modules {:main {:init-fn app.core/init}}
+             :js-options
+             {:resolve {"react-native" {:target :npm
+                                        :require "react-native-web"}}}}
+  :stories  {:target      :npm-module
+             :output-dir  "public/js/stories"
+             :entries     [app.stories.header]
+             :js-options
+             {:resolve {"react-native" {:target :npm
+                                        :require "react-native-web"}}}}}}

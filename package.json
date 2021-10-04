@@ -1,0 +1,21 @@
+{
+  "name": "react-native-web-cljs",
+  "version": "0.0.1",
+  "description": "Example of using React Native Web with ClojureScript",
+  "author": "John Doneth",
+  "license": "MIT",
+  "scripts": {
+    "dev": "shadow-cljs watch frontend",
+    "dev-stories": "shadow-cljs watch stories",
+    "storybook": "start-storybook"
+  },
+  "devDependencies": {
+    "@storybook/react": "^6.1.17",
+    "shadow-cljs": "^2.11.18"
+  },
+  "dependencies": {
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-native-web": "0.17.0"
+  }
+}
