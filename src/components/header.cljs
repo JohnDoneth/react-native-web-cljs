@@ -20,7 +20,7 @@
      :justifyContent "center"}
     :title
     {:fontWeight "bold"
-     :fontSize 24
+     :fontSize 64
      :color "blue"}}))
 
 (defn header [text]

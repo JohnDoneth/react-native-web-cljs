@@ -2,14 +2,17 @@
 {:source-paths
  ["src"]
 
+ ;:dev-http {8080 "public"}
+
  :dev-http {8080 "public"}
 
  :dependencies
- [[reagent "1.0.0"]]
+ [[reagent "1.1.0"]]
 
  :builds
- {:frontend {:target :browser
-             :modules {:main {:init-fn app.core/init}}
+ {:web      {:target :browser
+             :modules {:main {:init-fn web/init}}
+
              :js-options
              {:resolve {"react-native" {:target :npm
                                         :require "react-native-web"}}}}
@@ -18,4 +21,9 @@
              :entries     [stories.header]
              :js-options
              {:resolve {"react-native" {:target :npm
-                                        :require "react-native-web"}}}}}}
+                                        :require "react-native-web"}}}}
+  :mobile   {:target :react-native
+             :init-fn mobile/init
+             :output-dir "react-native/app"
+             :js-options {:js-package-dirs ["react-native/node_modules"]}}}}
+

@@ -1,7 +1,5 @@
 (ns core
-  (:require [app.components.header :refer [header]]
-            [reagent.dom :refer [render]]))
+  (:require [components.header :refer [header]]))
 
-(defn init []
-  (render [header "Hello, world!"]
-          (js/document.getElementById "app")))
+(defn root [] (header "Hello, world!"))
+
