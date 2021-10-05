@@ -15,13 +15,15 @@ npx shadow-cljs watch web
 
 ## Running Mobile (Android / iOS)
 
+Watch ClojureScript for changes.
+
 ```
 npm install
 
 npx shadow-cljs watch mobile
 ```
 
-In a separate shell
+In a separate shell (run metro to bundle the mobile application)
 
 ```
 cd react-native
@@ -29,7 +31,7 @@ npm install
 npm run start
 ```
 
-In a separate shell
+In a separate shell (launch the application on a device/emulator)
 
 ```
 cd react-native

@@ -11,6 +11,8 @@
        (js->clj)
        (clojure.walk/keywordize-keys)))
 
+(defn static-asset [path] path)
+
 (def styles
   (create-stylesheet
    {:container
@@ -25,5 +27,6 @@
 
 (defn header [text]
   [:> rn/View {:style (:container styles)}
-   [:> rn/Text {:style (:title styles)} text]])
+   [:> rn/Text {:style (:title styles)} text]
+   [:> rn/Image {:source (static-asset "cljs-white.svg")}]])
 
