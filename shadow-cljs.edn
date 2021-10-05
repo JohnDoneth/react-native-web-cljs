@@ -2,28 +2,18 @@
 {:source-paths
  ["src"]
 
- ;:dev-http {8080 "public"}
-
- :dev-http {8080 "public"}
-
  :dependencies
  [[reagent "1.1.0"]]
 
  :builds
- {:web      {:target :browser
-             :modules {:main {:init-fn web/init}}
-
-             :js-options
-             {:resolve {"react-native" {:target :npm
-                                        :require "react-native-web"}}}}
-  :stories  {:target      :npm-module
+ {:stories  {:target      :npm-module
              :output-dir  "public/js/stories"
              :entries     [stories.header]
              :js-options
              {:resolve {"react-native" {:target :npm
                                         :require "react-native-web"}}}}
   :mobile   {:target :react-native
-             :init-fn mobile/init
-             :output-dir "react-native/app"
-             :js-options {:js-package-dirs ["react-native/node_modules"]}}}}
+             :init-fn core/init
+             :output-dir "cljs_build"
+             :js-options {:js-package-dirs ["node_modules"]}}}}
 

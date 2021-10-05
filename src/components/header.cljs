@@ -24,6 +24,6 @@
   [:> rn/View {:style (:container styles)}
    [:> rn/Text {:style (:title styles)} text]
    [:> rn/Image {:style (:image styles)
-                 :source (static-asset "cljs-white.png" rn)}]])
+                 :source (static-asset "cljs-white.png")}]])
 
 
