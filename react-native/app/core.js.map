@@ -1,0 +1,1 @@
+{"version":3,"sources":["core.cljs"],"mappings":";AAIA,AAAA,AAAMA;AAAN,AAAc,AAAA,AAACC","names":["core/root","components.header/header"],"sourcesContent":["(ns core\n  (:require [components.header :refer [header]]))\n\n\n(defn root [] (header \"Hello, ClojureScript!\"))\n\n"]}

@@ -5,7 +5,7 @@
   "author": "John Doneth",
   "license": "MIT",
   "scripts": {
-    "dev": "shadow-cljs watch web",
+    "web": "shadow-cljs watch web",
     "dev-stories": "shadow-cljs watch stories",
     "storybook": "start-storybook"
   },
