@@ -4,7 +4,6 @@ Example of a ClojureScript application targeting Web, Android, and iOS with a
 single codebase with hot reloading for web and mobile at the same time.
 
 Does not use Expo.
-Includes Storybook.js for previewing components.
 
 ## Running Web
 
@@ -39,12 +38,4 @@ cd react-native
 npm run android
 # or
 npm run ios
-```
-
-## Running Storybook
-
-Watch stories
-
-```bash
-npm run 
 ```
