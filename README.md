@@ -45,6 +45,6 @@ npm run ios
 
 Watch stories
 
-```
+```bash
 npm run 
 ```

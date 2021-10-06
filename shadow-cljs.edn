@@ -12,7 +12,7 @@
              :js-options
              {:resolve {"react-native" {:target :npm
                                         :require "react-native-web"}}}}
-  :mobile   {:target :react-native
+  :app      {:target :react-native
              :init-fn core/init
              :output-dir "cljs_build"
              :js-options {:js-package-dirs ["node_modules"]}}}}

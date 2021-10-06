@@ -66,6 +66,10 @@ module.exports = {
     path: path.resolve(appDirectory, 'dist'),
   },
 
+  devServer: {
+    static: '.',
+  },
+
   // ...the rest of your config
 
   module: {

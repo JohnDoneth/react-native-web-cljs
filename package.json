@@ -8,7 +8,7 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint .",
-    "web": "webpack serve -d eval --mode development --config \"./web/webpack.config.js\" --inline --color --hot",
+    "web": "webpack serve -d eval --mode development --config \"./web/webpack.config.js\" --color --hot",
     "build:web": "webpack --mode production --config \"./web/webpack.config.js\" --hot",
     "dev-stories": "shadow-cljs watch stories",
     "storybook": "start-storybook"
