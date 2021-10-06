@@ -57,7 +57,7 @@ module.exports = {
     // load any web API polyfills
     // path.resolve(appDirectory, 'polyfills-web.js'),
     // your web-specific entry file
-    path.resolve(appDirectory, 'index.web.js'),
+    path.resolve(appDirectory, 'index.js'),
   ],
 
   // configures where the build ends up

@@ -1,10 +1,11 @@
 (ns core
   (:require [components.header :refer [header]]
+            [components.counter :refer [counter]]
             [reagent.core :as r]
             ["react-native" :as rn]
             [shadow.react-native :refer (render-root)]))
 
-(defn root [] (header "Hello, ClojureScript!"))
+(defn root [] (counter))
 
 (defn web? [] (= (.-OS (.-Platform rn)) "web"))
 

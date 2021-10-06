@@ -10,7 +10,13 @@ Does not use Expo.
 ```bash
 npm install
 
-npx shadow-cljs watch web
+npx shadow-cljs watch app
+```
+
+In a separate shell (Launches webpack dev server)
+
+```bash
+npm run web
 ```
 
 ## Running Mobile (Android / iOS)
@@ -20,7 +26,7 @@ Watch ClojureScript for changes.
 ```bash
 npm install
 
-npx shadow-cljs watch mobile
+npx shadow-cljs watch app
 ```
 
 In a separate shell (run metro to bundle the mobile application)
