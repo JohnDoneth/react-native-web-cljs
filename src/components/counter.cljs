@@ -15,18 +15,23 @@
             :color "blue"
             :margin 24}
 
-    :image {:width 128
-            :height 128}}))
+    :button {:padding-left 24
+             :padding-right 24
+             :padding-top 12
+             :padding-bottom 12
+             :margin 24
+             :border-width 1
+             :border-radius 5}}))
 
-(defn body []
-  (let [[count set-count] (r/useState 0)]
+(defn body [initial-count]
+  (let [[count set-count] (r/useState initial-count)]
     [:> rn/View {:style (:container styles)}
-     [:> rn/Button {:on-press #(set-count inc)} "Click"]
-     [:> rn/Text {:style (:title styles)} count]]))
+     [:> rn/Text {:style (:title styles)} count]
+     [:> rn/TouchableOpacity {:style (:button styles) :on-press #(set-count inc)}
+      [:> rn/Text {} "Click"]]]))
 
-(defn counter []
-  [:> rn/View
-   [:f> body]])
+(defn counter [initial-count]
+  [:f> body initial-count])
 
 
 
